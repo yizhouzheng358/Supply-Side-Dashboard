@@ -11,7 +11,7 @@ st.set_page_config(
     layout="wide")
 st.title("🏗️ Supply-Side Analysis")
 st.caption("Residential construction indicators")
-file_path = "/Users/yizhouzheng/Desktop/residential_panel.parquet"
+file_path = "residential_panel.parquet"
 if not os.path.exists(file_path):
     st.error(f"File not found: {file_path}")
     st.info("First create this file from your notebook using: panel_df.to_parquet('residential_panel.parquet')")
